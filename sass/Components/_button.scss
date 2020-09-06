@@ -1,0 +1,14 @@
+.btn--showMore{
+    @include btn-default($color-gray-0,$color-black-2,$fs-1 + 3,$pd-0 + 3, $pd-2,$color-black-6,$color-white-0,$color-black-2);
+}
+
+.btn--goToLocal{
+    @include btn-default($color-white-0,$color-blue-0,$fs-0,$pd-1 + 2, $pd-2,$color-black-0,$color-white-1,$color-blue-1);
+}
+.btn--learnMore {
+	cursor: pointer;
+	@include btn-default($color-white-0, $color-black-2, $fs-0, $pd-0 + 3, $pd-2 + 3, $color-black-2, $color-white-0, $color-black-1);
+	&:hover{
+		border-color: $color-black-1;;
+	}
+}
