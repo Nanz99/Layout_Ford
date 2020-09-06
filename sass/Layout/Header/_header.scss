@@ -1,0 +1,82 @@
+.topHeader {
+    background-color: $color-gray-0;
+    height: 40px;
+    line-height: 40px;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 $pd-5*2;
+
+        li {
+            i {
+                padding-right: 10px;
+            }
+
+            span {
+                &:hover {
+                    color: $color-blue-0;
+                }
+            }
+
+            &:last-child {
+                span {
+                    color: $color-blue-0;
+                }
+            }
+        }
+
+    }
+}
+
+.mainHeader {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px $pd-5*2;
+    border-bottom: 1px solid #ddd;
+    .nav-left {
+        display: flex;
+        align-items: center;
+
+        a {
+            span.logoBrand {
+                background: transparent url(../../../img/bsr-sprite2x.png) no-repeat -200px 0;
+                width: 93px;
+                height: 35px;
+                background-size: 400px 200px;
+                display: inline-block;
+                padding: 0;
+                margin: 6px 0 0 0;
+            }
+        }
+
+        .main-nav {
+            padding-left: 50px;
+            li {
+                display: inline;
+                margin: 0 12px;
+                a{
+                    font-size: $fs-1 + 2;
+                    color: $color-blue-0;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+    .nav-right {
+
+        li {
+            display: inline;
+            margin: 0 15px;
+            font-size: $fs-1 + 1;
+            cursor: pointer;
+            i{
+                padding-right: 10px;
+            }
+        }
+    }
+
+}

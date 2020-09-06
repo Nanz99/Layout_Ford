@@ -1,8 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+@import url("");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Muli' , sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #000000;
 }
 
 p {
@@ -22,47 +33,90 @@ button:focus {
   outline: none;
 }
 
-.btn--showMore {
-  color: #999;
-  background-color: #333333;
-  font-size: 16px;
-  padding: 8px 20px;
-  border: 1px solid #202020;
+.topHeader {
+  background-color: #f3f3f3;
+  height: 40px;
+  line-height: 40px;
 }
 
-.btn--showMore:hover {
-  color: #ffffff;
-  background-color: #333333;
+.topHeader ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 100px;
 }
 
-.btn--goToLocal {
-  color: #ffffff;
-  background-color: #00adef;
-  font-size: 15px;
-  padding: 12px 20px;
-  border: 1px solid #000000;
+.topHeader ul li i {
+  padding-right: 10px;
 }
 
-.btn--goToLocal:hover {
-  color: #f6f1ef;
-  background-color: #0088C6;
+.topHeader ul li span:hover {
+  color: #0276b3;
 }
 
-.btn--learnMore {
+.topHeader ul li:last-child span {
+  color: #0276b3;
+}
+
+.mainHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 100px;
+  border-bottom: 1px solid #ddd;
+}
+
+.mainHeader .nav-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainHeader .nav-left a span.logoBrand {
+  background: transparent url(../../../img/bsr-sprite2x.png) no-repeat -200px 0;
+  width: 93px;
+  height: 35px;
+  background-size: 400px 200px;
+  display: inline-block;
+  padding: 0;
+  margin: 6px 0 0 0;
+}
+
+.mainHeader .nav-left .main-nav {
+  padding-left: 50px;
+}
+
+.mainHeader .nav-left .main-nav li {
+  display: inline;
+  margin: 0 12px;
+}
+
+.mainHeader .nav-left .main-nav li a {
+  font-size: 17px;
+  color: #0276b3;
   cursor: pointer;
-  color: #ffffff;
-  background-color: #333333;
-  font-size: 15px;
-  padding: 8px 23px;
-  border: 1px solid #333333;
 }
 
-.btn--learnMore:hover {
-  color: #ffffff;
-  background-color: #1f1f1f;
+.mainHeader .nav-right li {
+  display: inline;
+  margin: 0 15px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.btn--learnMore:hover {
-  border-color: #1f1f1f;
+.mainHeader .nav-right li i {
+  padding-right: 10px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -9,7 +9,13 @@
 
 
 // Layout
-
+@import "./Layout/Header/header";
+@import "./Layout/Content/carousel";
+@import "./Layout/Content/expandedFeature1";
+@import "./Layout/Content/expandedFeature2";
+@import "./Layout/Content/billboard";
+@import "./Layout/Content/galleryBrand";
+@import "./Layout/Content/expandedFeature3";
 
 // Component
 @import "./Components/button";
