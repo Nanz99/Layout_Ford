@@ -4,11 +4,11 @@
     font-weight: $fw;
 }
 
-@mixin btn-default($color,$bg-color,$fs,$pd-x,$pd-y,$boder-color-1,$color-hover,$bg-color-hover) {
+@mixin btn-default($color,$bg-color,$fs,$pd-y,$pd-x,$boder-color-1,$color-hover,$bg-color-hover) {
     color: $color;
     background-color: $bg-color;
     font-size: $fs;
-    padding: $pd-x $pd-y;
+    padding:$pd-y $pd-x ;
     border: 1px solid $boder-color-1;
     &:hover {
         color: $color-hover;
