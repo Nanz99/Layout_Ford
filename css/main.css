@@ -89,16 +89,6 @@ header .mainHeader .nav-left {
           align-items: center;
 }
 
-header .mainHeader .nav-left a span.logoBrand {
-  background: transparent url(../../../img/bsr-sprite2x.png) no-repeat -200px 0;
-  width: 100px;
-  height: 42px;
-  background-size: 400px 200px;
-  display: inline-block;
-  padding: 0;
-  margin: 6px 0 0 0;
-}
-
 header .mainHeader .nav-left .main-nav {
   padding-left: 50px;
 }
@@ -792,16 +782,6 @@ header .mainHeader .nav-right li i {
 .tertialyFooter .tertialyFooter__content ul li .nav-footer li {
   display: inline;
   margin-right: 10px;
-}
-
-.tertialyFooter .tertialyFooter__content .logoFooter {
-  background: transparent url(../../../img/bsr-sprite2x.png) no-repeat -200px 0;
-  width: 95px;
-  height: 40px;
-  background-size: 400px 200px;
-  display: inline-block;
-  padding: 0;
-  margin: 6px 0 0 0;
 }
 
 .searchPages {
