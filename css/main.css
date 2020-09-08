@@ -38,13 +38,13 @@ button:focus {
   outline: none;
 }
 
-.topHeader {
+header .topHeader {
   background-color: #f3f3f3;
   height: 40px;
   line-height: 40px;
 }
 
-.topHeader ul {
+header .topHeader ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,19 +54,19 @@ button:focus {
   padding: 0 100px;
 }
 
-.topHeader ul li i {
+header .topHeader ul li i {
   padding-right: 10px;
 }
 
-.topHeader ul li span:hover {
+header .topHeader ul li span:hover {
   color: #0276b3;
 }
 
-.topHeader ul li:last-child span {
+header .topHeader ul li:last-child span {
   color: #0276b3;
 }
 
-.mainHeader {
+header .mainHeader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,7 +80,7 @@ button:focus {
   border-bottom: 1px solid #ddd;
 }
 
-.mainHeader .nav-left {
+header .mainHeader .nav-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,7 +89,7 @@ button:focus {
           align-items: center;
 }
 
-.mainHeader .nav-left a span.logoBrand {
+header .mainHeader .nav-left a span.logoBrand {
   background: transparent url(../../../img/bsr-sprite2x.png) no-repeat -200px 0;
   width: 100px;
   height: 42px;
@@ -99,41 +99,71 @@ button:focus {
   margin: 6px 0 0 0;
 }
 
-.mainHeader .nav-left .main-nav {
+header .mainHeader .nav-left .main-nav {
   padding-left: 50px;
 }
 
-.mainHeader .nav-left .main-nav li {
+header .mainHeader .nav-left .main-nav li {
   display: inline;
   margin: 0 12px;
 }
 
-.mainHeader .nav-left .main-nav li a {
+header .mainHeader .nav-left .main-nav li a {
   font-size: 17px;
   color: #0276b3;
   cursor: pointer;
 }
 
-.mainHeader .nav-right li {
-  display: inline;
+header .mainHeader .nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .mainHeader .nav-right li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 15px;
   font-size: 16px;
   cursor: pointer;
 }
 
-.mainHeader .nav-right li button {
+header .mainHeader .nav-right li button {
   cursor: pointer;
   border: none;
   background-color: transparent;
 }
 
-.mainHeader .nav-right li button i {
+header .mainHeader .nav-right li button i {
   font-size: 20px;
   color: #626466;
 }
 
-.mainHeader .nav-right li i {
+header .mainHeader .nav-right li i {
   padding-right: 10px;
+}
+
+.sticky-ford {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.sticky-ford .mainHeader {
+  background-color: #ffffff;
 }
 
 .carousel {
@@ -785,6 +815,7 @@ button:focus {
   opacity: 0;
   -webkit-transition: visibility 0.3s, opacity 0.3s;
   transition: visibility 0.3s, opacity 0.3s;
+  z-index: 1000;
 }
 
 .searchPages .searchForm {
@@ -803,6 +834,10 @@ button:focus {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 10px;
+}
+
+.searchPages .searchForm p i {
+  margin-right: 10px;
 }
 
 .searchPages .searchForm .form-control {

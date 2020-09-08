@@ -62,3 +62,14 @@ searchClose.addEventListener("click",function(){
    searchModal.classList.remove("search-active");
 
 })
+
+
+
+$(window).on('scroll', function () {
+   if ($(window).scrollTop()) {
+      $('#fordHeader').addClass('sticky-ford');
+   }
+   else {
+      $('#fordHeader').removeClass('sticky-ford');
+   }
+});
