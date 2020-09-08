@@ -12,7 +12,7 @@
             i {
                 padding-right: 10px;
             }
-
+          
             span {
                 &:hover {
                     color: $color-blue-0;
@@ -72,6 +72,15 @@
             display: inline;
             margin: 0 15px;
             font-size: $fs-1 + 1;
+            button{
+                cursor: pointer;
+                border:none;
+                background-color: transparent;
+                i{
+                    font-size: 20px;
+                    color: $color-gray-1;
+                }
+            }
             cursor: pointer;
             i{
                 padding-right: 10px;

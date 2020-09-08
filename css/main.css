@@ -121,8 +121,106 @@ button:focus {
   cursor: pointer;
 }
 
+.mainHeader .nav-right li button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.mainHeader .nav-right li button i {
+  font-size: 20px;
+  color: #626466;
+}
+
 .mainHeader .nav-right li i {
   padding-right: 10px;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel .carousel__item {
+  position: relative;
+  height: 620px;
+  overflow: hidden;
+}
+
+.carousel .carousel__item picture img {
+  width: 100%;
+  display: block;
+}
+
+.carousel .carousel__item .carousel__content {
+  position: absolute;
+  top: 10%;
+  left: 7%;
+}
+
+.carousel .carousel__item .carousel__content h1 {
+  color: #1B394E;
+  font-size: 42px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.carousel .prev {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 70px;
+  width: 58px;
+  line-break: 70px;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(85, 85, 85, 0.8);
+  border: 1px solid rgba(85, 85, 85, 0.8);
+  border-radius: 0;
+}
+
+.carousel .prev i {
+  font-size: 50px;
+  -webkit-transform: translate(-2px, 2px);
+          transform: translate(-2px, 2px);
+}
+
+.carousel .prev:hover {
+  color: #2096cd;
+  background-color: #ffffff;
+  border: 1px solid #2096cd;
+}
+
+.carousel .next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  cursor: pointer;
+  height: 70px;
+  width: 58px;
+  line-break: 70px;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(85, 85, 85, 0.8);
+  border: 1px solid rgba(85, 85, 85, 0.8);
+  border-radius: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.carousel .next i {
+  font-size: 50px;
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+}
+
+.carousel .next:hover {
+  color: #2096cd;
+  background-color: #ffffff;
+  border: 1px solid #2096cd;
 }
 
 .expandedFeature1 .expandedFeature-content {
@@ -363,6 +461,46 @@ button:focus {
   font-size: 45px;
   font-weight: normal;
   margin-bottom: 40px;
+}
+
+.disclosures {
+  position: relative;
+}
+
+.disclosures .disclosures__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  text-align: center;
+  color: #0276b3;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 30px 0;
+}
+
+.disclosures .disclosures__heading i {
+  margin-left: 10px;
+}
+
+.disclosures .disclosures__content {
+  background-color: #f7f7f7;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s ease-out;
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: auto;
+}
+
+.disclosures .disclosures__content .disclosures__text {
+  padding: 40px 70px;
 }
 
 .bannerFooter {
@@ -634,6 +772,89 @@ button:focus {
   display: inline-block;
   padding: 0;
   margin: 6px 0 0 0;
+}
+
+.searchPages {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0.3s, opacity 0.3s;
+  transition: visibility 0.3s, opacity 0.3s;
+}
+
+.searchPages .searchForm {
+  position: relative;
+  padding: 70px 10% 70px;
+  background-color: #ffffff;
+  margin: auto;
+  max-width: 1440px;
+}
+
+.searchPages .searchForm p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.searchPages .searchForm .form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.searchPages .searchForm .form-control input {
+  border: none;
+  background-color: #ffffff;
+  font-size: 50px;
+}
+
+.searchPages .searchForm .form-control input:focus {
+  outline: none;
+}
+
+.searchPages .searchForm .form-control .searchButton {
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  color: #0276b3;
+}
+
+.searchPages .searchForm .form-control .searchButton i {
+  font-size: 50px;
+}
+
+.searchPages .searchForm .search-close {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  background-color: transparent;
+  color: #626466;
+}
+
+.searchPages .searchForm .search-close i {
+  font-size: 30px;
+}
+
+.search-active {
+  visibility: visible;
+  opacity: 1;
 }
 
 .btn--blueWhite {
