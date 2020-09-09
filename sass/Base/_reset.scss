@@ -9,12 +9,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
+body{
     font-family: 'Muli' , sans-serif;
     max-width: 1440px;
     margin: 0 auto;
     font-size: $fs-1 - 1;
     color: $color-black-0;
+   
+}
+html{
+    scroll-behavior: smooth;
 }
 p{
     margin: 0;

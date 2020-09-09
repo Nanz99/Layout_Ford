@@ -1,0 +1,23 @@
+.backToTop{
+   position: fixed;
+   right: 30px;
+   bottom: 30px;
+   opacity: 0;
+   z-index: 1000;
+   transition: all 0.3s ease-in-out;
+   pointer-events: none;
+   i{
+      cursor: pointer;
+      height: 42px;
+      width: 42px;
+      line-height: 42px;
+      text-align: center;
+      background-color: rgba(0,0,0,0.6);
+      color: $color-white-0;
+      border-radius: 50%;
+   }
+}
+.backToTop-active{
+   opacity: 1;
+   pointer-events: auto;
+}

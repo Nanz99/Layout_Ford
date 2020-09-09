@@ -73,3 +73,20 @@ $(window).on('scroll', function () {
       $('#fordHeader').removeClass('sticky-ford');
    }
 });
+// back to top
+var backToTop = document.querySelector(".backToTop");
+window.addEventListener("scroll",() => {
+   if(window.pageYOffset > 250){
+      backToTop.classList.add("backToTop-active");
+   }
+   else{
+      setTimeout(() => {
+         backToTop.classList.remove("backToTop-active");
+      },200);
+     
+   }
+})
+
+backToTop.addEventListener("click",() => {
+   window.scrollTo(0,0);
+})
