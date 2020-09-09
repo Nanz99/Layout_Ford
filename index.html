@@ -5,12 +5,12 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Ford® - New Hybrid &amp; Electric Vehicles, SUVs, Crossovers, Trucks, Vans &amp; Cars</title>
-   <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./img/favicon.ico" />
+   <link rel="shortcut icon" href="./img/favicon.ico" />
 
    <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
+<body >
    <!-- HEADER -->
    <header  id="fordHeader">
       <!-- Top Header -->
@@ -32,7 +32,7 @@
             </ul>
          </div>
          <ul class="nav-right">
-            <li><i class="material-icons">account_circle</i><span>Sign in</span></li>
+            <li><a class="loginButton"><i class="material-icons">account_circle</i><span>Sign in</span></a></li>
             <li><button id="searchButton"><i class="fa fa-search"></i></button></li>
             <li><i class="fa fa-globe"></i><span>English</span></li>
          </ul>
@@ -74,8 +74,8 @@
             </a>
          </div>
       </div>
-      <button class="prev" onclick="prevSlide()"><i class="material-icons">keyboard_arrow_left</i></button>
-      <button class="next" onclick="nextSlide()"><i class="material-icons">keyboard_arrow_right</i></button>
+      <button class="prev" id="prevSlide"><i class="material-icons">keyboard_arrow_left</i></button>
+      <button class="next" id="nextSlide" ><i class="material-icons">keyboard_arrow_right</i></button>
 
    </div>
 
@@ -1082,12 +1082,44 @@
          </div>
          <button class="search-close"><i class="material-icons">close</i></button>
       </div>
-      <!-- <div class="modalSearch">
+   </div>
+   <!-- Login Pages -->
+   <div class="loginContainer">
+      <div class="login-content">
+         <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Login</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+         </div>
+         <div class="social-icons">
+            <a href="https://www.facebook.com/anhnhut.0101"><img src="img/fb.png" alt=""></a>
+            <a href="#"><img src="img/gp.png" alt=""></a>
+            <a href="#"><img src="img/tw.png" alt=""></a>
+         </div>
+         <form id="login"action="" class="input-group">
+            <input type="text" id="userName" class="input-field" placeholder="User Name" required>
+            <input type="text" id="passWord" class="input-field" placeholder="Enter Password" required>
+           <div class="rememberPass">
+            <input type="checkbox" class="check-box" placeholder="Enter PassWord" required>
+            <span>Remember Password</span>
+           </div>
 
-      </div> -->
+            <button type="button" onClick="getInfo()" class="submit-btn" id="submit-btn">Submit</button>
+            <button type="button" onClick="guestMode()" class="submit-btn" >Guest Mode</button>
+         </form>
+         <form id="register" action="" class="input-group">
+            <input type="text" class="input-field" placeholder="User Name" required>
+            <input type="email" class="input-field" placeholder="Enter Email" required>
+            <input type="text" class="input-field" placeholder="Enter PassWord" required>
+            <div class="rememberPass">
+            <input type="checkbox" class="check-box" placeholder="Enter PassWord" required>
+            <span>I agree to the terms & conditions</span>
+         </div>
+            <button type="submit" class="submit-btn">Register</button>
+         </form>
+      </div>
    </div>
    <!-- JS -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
    <script src="js/main.js"></script>
 
 </body>

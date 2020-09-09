@@ -6,15 +6,29 @@
    z-index: 1000;
    transition: all 0.3s ease-in-out;
    pointer-events: none;
+   transform: rotate(0g);
+   background-color: rgba(0,0,0,0.6);
+   border: 3px solid $color-blue-0;
+   transition: all 0.3s ease;
    i{
       cursor: pointer;
-      height: 42px;
-      width: 42px;
-      line-height: 42px;
+      height: 36px;
+      width: 36px;
+      line-height: 36px;
       text-align: center;
-      background-color: rgba(0,0,0,0.6);
+      font-size: 28px;
       color: $color-white-0;
-      border-radius: 50%;
+      transform: rotate(0);
+      transition: all 0.3s ease;
+   }
+   &:hover{
+      background-color: $color-blue-4;
+      border-color: $color-black-3;
+      transform: rotate(45deg);
+      i{
+         transform: rotate(-45deg);
+      }
+      
    }
 }
 .backToTop-active{
