@@ -40,7 +40,6 @@
    </header>
    <!-- CAROUSEL -->
    <div class="carousel" id="carousel">
-      
       <div class="carousel__item">
          <picture>
             <img src="img/slider_1.jpeg" alt="">
@@ -69,14 +68,16 @@
          </picture>
          <div class="carousel__content">
             <h1 style="color: #ffffff;">You only live once, but if you do it <br> right, once is enough.</h1>
-            <a href="#">
+            <a href="#" >
                <button class="btn--whiteBlue">Style For Life </button>
             </a>
          </div>
       </div>
       <button class="prev" id="prevSlide"><i class="material-icons">keyboard_arrow_left</i></button>
       <button class="next" id="nextSlide" ><i class="material-icons">keyboard_arrow_right</i></button>
-
+      <a href="#toScrollDown" class="scroll-down">
+         <img src="./img/tải xuống.png" alt="">
+      </a>
    </div>
 
    <!-- EXPANDED FEATURE 1-->
@@ -109,7 +110,7 @@
    </div>
    </div>
    <!-- EXPANDED FEATURE 2-->
-   <div class="expandedFeature2">
+   <div class="expandedFeature2" id="expandedFeature2">
       <div class="expandedFeature2__title">
          <h2>Something for Everyone</h2>
          <p>ee our full lineup of vehicles and find the one that best fits you.</p>
@@ -121,13 +122,15 @@
          </picture>
       </div>
    </div>
+   <div id="toScrollDown"></div> 
    <!-- BILLBOARD CONTAINER  -->
-   <div class="billBoard">
+   <div class="billBoard" id="billBoard">
       <picture>
          <img src="./img/banner_2.jpeg" alt="">
       </picture>
-      <a href="#" class="viewOffers"><span>View Offers</span> <i class="material-icons">keyboard_arrow_right</i></a>
+      <a href="#" class="viewOffers"><span>View Offers</span>` <i class="material-icons">keyboard_arrow_right</i></a>
    </div>
+   
    <!-- GALLERY BRAND  -->
    <div class="galleryBrand">
       <div class="galleryBrand__content">
@@ -1088,13 +1091,23 @@
       <div class="login-content">
          <div class="button-box">
             <div id="btn"></div>
-            <button type="button" class="toggle-btn" onclick="login()">Login</button>
-            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            <button type="button" class="toggle-btn" onclick="login()">Login Web</button>
+            <!-- <button type="button" class="toggle-btn" onclick="register()">Register</button> -->
          </div>
          <div class="social-icons">
-            <a href="https://www.facebook.com/anhnhut.0101"><img src="img/fb.png" alt=""></a>
-            <a href="#"><img src="img/gp.png" alt=""></a>
-            <a href="#"><img src="img/tw.png" alt=""></a>
+            <p id="social-text">Follow Me:</p>
+            <div class="container" id="container">
+               
+               <button id="open" class="open-btn">
+                  <i class="fas fa-share-alt"></i>
+               </button>
+               <a href="#" class="ytb" target="_blank"><i class="fab fa-youtube"></i></a>
+               <a href="#" class="twt" target="_blank"><i class="fab fa-twitter"></i></a>
+               <a href="#" class="x" id="close"><i class="fas fa-times"></i></a>
+               <a href="#" class="lin" target="_blank"><i class="fab fa-facebook-f"></i></a>
+               <a href="#" class="ins" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            
          </div>
          <form id="login"action="" class="input-group">
             <input type="text" id="userName" class="input-field" placeholder="User Name" required>
@@ -1104,10 +1117,10 @@
             <span>Remember Password</span>
            </div>
 
-            <button type="button" onClick="getInfo()" class="submit-btn" id="submit-btn">Submit</button>
+            <button type="submit" onClick="getInfo()" class="submit-btn" id="submit-btn">Submit</button>
             <button type="button" onClick="guestMode()" class="submit-btn" >Guest Mode</button>
          </form>
-         <form id="register" action="" class="input-group">
+         <!-- <form id="register" action="" class="input-group">
             <input type="text" class="input-field" placeholder="User Name" required>
             <input type="email" class="input-field" placeholder="Enter Email" required>
             <input type="text" class="input-field" placeholder="Enter PassWord" required>
@@ -1116,7 +1129,7 @@
             <span>I agree to the terms & conditions</span>
          </div>
             <button type="submit" class="submit-btn">Register</button>
-         </form>
+         </form> -->
       </div>
    </div>
    <!-- JS -->

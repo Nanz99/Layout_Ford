@@ -76,4 +76,12 @@
          border: 1px solid $color-blue-5;
       }
    }
+   .scroll-down{
+      position: absolute;
+      bottom: 30px;
+      cursor: pointer;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 99;
+   }
 }

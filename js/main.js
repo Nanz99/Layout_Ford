@@ -138,3 +138,20 @@ function guestMode(){
    var loginModal = document.querySelector(".loginContainer");
    loginModal.classList.add("outLogin");
 }
+
+
+// Social icon
+const open = document.getElementById('open');
+const close = document.getElementById('close');
+const container = document.getElementById('container');
+var socialText = document.getElementById("social-text");
+
+open.addEventListener('click', () => {
+   container.classList.add('open');
+   socialText.innerHTML = " ";
+});
+
+close.addEventListener('click', () => {
+   container.classList.remove('open');
+   socialText.innerHTML = "Follow Me:"
+});
