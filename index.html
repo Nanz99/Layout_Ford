@@ -1085,10 +1085,113 @@
          </div>
          <button class="search-close"><i class="material-icons">close</i></button>
       </div>
+      <div class="clock">
+         <div id="hours" class="flex">
+            <div class="number">
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+            </div>
+            <div class="number">
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+            </div>
+         </div>
+      
+         <div id="minutes" class="flex">
+            <div class="number">
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+            </div>
+            <div class="number">
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+            </div>
+         </div>
+      
+         <div id="seconds" class="flex">
+            <div class="number">
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+            </div>
+            <div class="number">
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+               <div class="piece"></div>
+            </div>
+         </div>
+      </div>
+      
    </div>
    <!-- Login Pages -->
    <div class="loginContainer">
+      
       <div class="login-content">
+         
          <div class="button-box">
             <div id="btn"></div>
             <button type="button" class="toggle-btn" onclick="login()">Login Web</button>
@@ -1117,8 +1220,9 @@
             <span>Remember Password</span>
            </div>
 
-            <button type="submit" onClick="getInfo()" class="submit-btn" id="submit-btn">Submit</button>
+            <button type="button" onClick="loginToSystem()" class="submit-btn" id="submit-btn">Submit</button>
             <button type="button" onClick="guestMode()" class="submit-btn" >Guest Mode</button>
+          
          </form>
          <!-- <form id="register" action="" class="input-group">
             <input type="text" class="input-field" placeholder="User Name" required>
@@ -1132,9 +1236,11 @@
          </form> -->
       </div>
    </div>
+
+   
    <!-- JS -->
    <script src="js/main.js"></script>
-
+   
 </body>
 
 </html>
