@@ -9,6 +9,8 @@
    opacity: 0;
    transition: visibility 0.3s, opacity 0.3s;
    z-index: 1000;
+   overflow: hidden;
+   max-height: 100%;
    .searchForm{
       position: relative;
       padding: 70px 10% 70px;

@@ -156,7 +156,7 @@ function guestMode() {
 }
 
 
-
+// CLock
 const hoursEls = document.querySelectorAll('#hours .number');
 const minutesEls = document.querySelectorAll('#minutes .number');
 const secondsEls = document.querySelectorAll('#seconds .number');
@@ -200,14 +200,14 @@ function getTime() {
 }
 
 function displayNumber(el, number) {
-	const pieces = el.querySelectorAll('.piece');
-	
-	// show/hide pieces depending on the states array
-	pieces.forEach((piece, idx) => {
+	const squares = el.querySelectorAll('.square');
+
+	squares.forEach((square, idx) => {
 		if(states[+number].includes(idx + 1)) {
-			piece.classList.add('show');
+			square.classList.add('show');
 		} else {
-			piece.classList.remove('show');
+			square.classList.remove('show');
 		}
 	});
 }
+

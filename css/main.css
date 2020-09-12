@@ -380,6 +380,7 @@ header .mainHeader .nav-right {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #0276b3;
 }
 
 header .mainHeader .nav-right li {
@@ -402,7 +403,7 @@ header .mainHeader .nav-right li button {
 
 header .mainHeader .nav-right li button i {
   font-size: 20px;
-  color: #626466;
+  color: #0276b3;
 }
 
 header .mainHeader .nav-right li i {
@@ -1075,6 +1076,8 @@ header .mainHeader .nav-right li i {
   -webkit-transition: visibility 0.3s, opacity 0.3s;
   transition: visibility 0.3s, opacity 0.3s;
   z-index: 1000;
+  overflow: hidden;
+  max-height: 100%;
 }
 
 .searchPages .searchForm {
@@ -1259,7 +1262,12 @@ header .mainHeader .nav-right li i {
   background-color: #ffffff;
 }
 
-.clock {
+.clockContainer {
+  width: 100%;
+  background-color: #092A46;
+}
+
+.clockContainer .clock__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1269,11 +1277,12 @@ header .mainHeader .nav-right li i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transform: scale(0.4);
-          transform: scale(0.4);
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+  width: 100%;
 }
 
-.flex {
+.clockContainer .clock__content .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1286,14 +1295,14 @@ header .mainHeader .nav-right li i {
   margin: 0 50px;
 }
 
-.number {
+.clockContainer .clock__content .flex .number {
   position: relative;
   height: 290px;
   width: 170px;
   margin: 20px;
 }
 
-.piece {
+.clockContainer .clock__content .flex .number .square {
   background-color: #fff;
   border: 2px solid transparent;
   border-right-color: #aaa;
@@ -1305,7 +1314,7 @@ header .mainHeader .nav-right li i {
           transform: scale(0);
 }
 
-.piece.show {
+.clockContainer .clock__content .flex .number .square.show {
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: -webkit-transform 0.2s linear;
@@ -1314,68 +1323,73 @@ header .mainHeader .nav-right li i {
   transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 
-.piece:nth-of-type(1) {
+.clockContainer .clock__content .flex .number .square:nth-of-type(1) {
   top: 0;
   left: 0;
 }
 
-.piece:nth-of-type(2) {
+.clockContainer .clock__content .flex .number .square:nth-of-type(2) {
   top: 0;
   left: 60px;
 }
 
-.piece:nth-of-type(3) {
+.clockContainer .clock__content .flex .number .square:nth-of-type(3) {
   top: 0;
   left: 120px;
 }
 
-.piece:nth-of-type(4) {
+.clockContainer .clock__content .flex .number .square:nth-of-type(4) {
   top: 60px;
   left: 0;
 }
 
-.piece:nth-of-type(5) {
+.clockContainer .clock__content .flex .number .square:nth-of-type(5) {
   top: 60px;
   left: 120px;
 }
 
-.piece:nth-of-type(6) {
+.clockContainer .clock__content .flex .number .square:nth-of-type(6) {
   top: 120px;
   left: 0;
 }
 
-.piece:nth-of-type(7) {
+.clockContainer .clock__content .flex .number .square:nth-of-type(7) {
   top: 120px;
   left: 60px;
 }
 
-.piece:nth-of-type(8) {
+.clockContainer .clock__content .flex .number .square:nth-of-type(8) {
   top: 120px;
   left: 120px;
 }
 
-.piece:nth-of-type(9) {
+.clockContainer .clock__content .flex .number .square:nth-of-type(9) {
   top: 180px;
   left: 0px;
 }
 
-.piece:nth-of-type(10) {
+.clockContainer .clock__content .flex .number .square:nth-of-type(10) {
   top: 180px;
   left: 120px;
 }
 
-.piece:nth-of-type(11) {
+.clockContainer .clock__content .flex .number .square:nth-of-type(11) {
   top: 240px;
   left: 0px;
 }
 
-.piece:nth-of-type(12) {
+.clockContainer .clock__content .flex .number .square:nth-of-type(12) {
   top: 240px;
   left: 60px;
 }
 
-.piece:nth-of-type(13) {
+.clockContainer .clock__content .flex .number .square:nth-of-type(13) {
   top: 240px;
   left: 120px;
+}
+
+.clockContainer .clock__content span {
+  font-size: 200px;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
